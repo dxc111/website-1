@@ -73,6 +73,7 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
 /* ↑ Reset End ↑ */
 :root {
     --item-bg: #F6F2FF;
@@ -101,7 +102,7 @@ select {
 }
 
 .main article {
-   flex: 1;
+    flex: 1;
 }
 
 .main article > a {
@@ -178,7 +179,7 @@ select {
 
     .main article {
         width: 100%;
-        flex:  0 auto;
+        flex: 0 auto;
     }
 
     /*.main article > a svg {*/
@@ -204,5 +205,13 @@ select {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@supports not (row-gap: 10px) {
+    @media screen and (max-width: 720px) {
+        .main article + article {
+            margin-top: 16px;
+        }
     }
 }
