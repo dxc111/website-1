@@ -194,8 +194,9 @@ select {
 
 @supports not (aspect-ratio: 1/1) {
     .main article > a {
+        position: relative;
         /*aspect-ratio: 311 / 204;*/
-        padding-top: 152.456%;
+        padding-top: 65.594%;
     }
 
     .main article > a svg {
